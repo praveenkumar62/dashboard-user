@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container-home">
+
+        <!-- Left Navbar only -->
+        <div class="side-nav" id="sidenav">
+            <div style="position: relative;">
+                <a href="javascript:void(0)" class="closeBtn" id="closeBtn" onclick="closeNav()"><i class="fa fa-times" aria-hidden="true"></i>  
+                </a>
+            </div>
+            <div class="nav-icons" id="navicons">
+                <p><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-bar-chart-o" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-flask" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-edit" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-files-o" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-table" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-magic" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></p>
+                <p><a href="#"><i class="fa fa-database" aria-hidden="true"></i></a></p>
+            </div>
+
+            <!-- style="display: none;" -->
+            <div class="nav-icons-list" id="navicon" style="display: none;">
+                <p><a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a></p>
+                <p><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i> Layout</a></p>
+                <p><a href="#"><i class="fa fa-bar-chart-o" aria-hidden="true"></i> Graphs</a></p>
+                <p><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> Mailbox</a></p>
+                <p><a href="#"><i class="fa fa-pie-chart" aria-hidden="true"> Metrics</i></a></p>
+                <p><a href="#"><i class="fa fa-flask" aria-hidden="true"></i> Widgets</a></p>
+                <p><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> Forms</a></p>
+                <p><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i> App Views</a></p>
+                <p><a href="#"><i class="fa fa-files-o" aria-hidden="true"></i> Other Pages</a></p>
+                <p><a href="#"><i class="fa fa-globe" aria-hidden="true"></i> Miscellaneous</a></p>
+                <p><a href="#"><i class="fa fa-laptop" aria-hidden="true"></i> UI Elements</a></p>
+                <p><a href="#"><i class="fa fa-table" aria-hidden="true"></i> Grid options</a></p>
+                <p><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Tables</a></p>
+                <p><a href="#"><i class="fa fa-picture-o" aria-hidden="true"></i> E-commerce</a></p>
+                <p><a href="#"><i class="fa fa-magic" aria-hidden="true"></i> Gallery</a></p>
+                <p><a href="#"><i class="fa fa-sitemap" aria-hidden="true"></i> Menu Levels</a></p>
+                <p><a href="#"><i class="fa fa-star" aria-hidden="true"></i> Animations</a></p>
+                <p><a href="#"><i class="fa fa-database" aria-hidden="true"></i> Package</a></p>
+            </div>
+        </div>
+
+        <!-- Right Main Contents -->
+        <div class="main-content" id="maincontent">
+
+            <div class="navigation-bar">
+                <div class="well" style="margin: 0;">
+                    <span id="fa-bars"style="font-size:30px;cursor:pointer;" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                    <input type="text" id="search" name="search" placeholder=" Search for something..."/>
+    
+                    <div class="notifications">
+                        <div class="name">Welcome <span>Praveen!</span></div>
+                        <div class="icons">
+                            <i class="fa fa-envelope" title="New Mail" style="padding: 0 10px 10px 10px;" aria-hidden="true"></i>
+                            <i class="fa fa-bell" title="Notifications" style="padding: 0 10px 10px 10px;" aria-hidden="true"></i>
+                            <i class="fa fa-sign-out" title="Sign Out" style="padding: 0 10px 10px 10px;" aria-hidden="true"></i>
+                            <i class="fa fa-server" title="Messages" style="padding: 0 10px 10px 10px;" aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="container-fluid" style="padding: 0;">
+                <div class="panel panel-default" style="margin-bottom: 0;">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                            <div class="container-left" style="padding: 10px;">
+                                <h3>Welcome Praveenkumar,</h3>
+                                <p>You have 42 Messages and 16 Notifications</p>
+                                <ol>
+                                    <li>Please contact me</li>
+                                    <li>Sign a contract</li>
+                                    <li>Open a new Shop</li>
+                                    <li>Call back to sridhar</li>
+                                    <li>Write Letter to Mukesh</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                            <div id="chartContainer" style="height: 240px; width: 95%;">
+                            </div>
+                            <div class="chartData">
+                                <p>$406,100 <span>Sales marketing report</span> </p>
+                                <p>$150,401 <span>Annual sales revenue</span> </p>
+                                <p>$16,822 <span>Half-year revenue margin</span> </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="container-right" style="padding: 10px;">
+                                <h3>Project Status and Progress</h3>
+                                <p>You have two project with not compleated task.</p>
+                                    <div id="doughnutContainer" style="height: 220px; width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="background-color: #F3F3F4; padding-top: 15px;">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="header" style="border-bottom: 1px solid rgb(219, 219, 219);">
+                                <p>New data for the report</p>
+                                <div class="actions">
+                                    <i class="fa fa-chevron-up" data-toggle="collapse" data-target="#content-report" aria-hidden="true"></i>
+                                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="content" id="content-report">
+                                <p style="font-size: 14px;">NYS report new data! </p>
+                                <a style="font-size: 10px;" href="#">Check the stock price!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="header" style="border-bottom: 1px solid rgb(219, 219, 219);">
+                                <p>Your Daily Feed</p>
+                                <button class="btn btn-msg">10 Messages</button>
+                            </div>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic5.jpeg" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Monica Smith posted a new blog.</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">5m ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic7.png" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Mark Johnson posted message on Monica Smith site.</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">5m ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic5.jpeg" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Janet Rosowski add 1 photo on Monica Smith.</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">1h ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic7.png" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Chris Johnatan Overtunk started following Monica Smith.</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">1h ago</p>
+                                            </div>
+                                        </div>
+                                        <div class="button">
+                                            <button class="btn btn-like">
+                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i> Like
+                                            </button>
+                                            <button class="btn btn-dislike">
+                                                <i class="fa fa-thumbs-down" aria-hidden="true"></i> Unlike
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic7.png" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Mike Loreipsum started following Monica Smith. </p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">3h ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <img src="/images/pic5.jpeg" alt="pic" class="img-circle">
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                                                <p style="display: inline-block;">Monica Smith posted a new blog.</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                                <p style="display: inline-block; font-size: 11px;">5h ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-showMore">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    Show More</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="header" style="border-bottom: 1px solid rgb(219, 219, 219);">
+                                <p>Alpha Project</p>
+                                <div class="actions">
+                                    <i class="fa fa-chevron-up" data-toggle="collapse" data-target="#content-projects" aria-hidden="true"></i>
+                                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="content" id="content-projects">
+                                <div class="well">
+                                    <h1>You have a meeting today!</h1>
+                                    <p style="font-size: 13px;">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Meeting is on 6 p.m today. Please check the schedule for more updates.
+                                    </p>                                    
+                                </div>
+                                <div class="message-list">
+                                    <div class="message-items">
+                                        <h5>Meeting</h5>
+                                        <p>Conference on the sales results for the previous year. Monica please examine sales trends in marketing and products. Below please find the current status of the sale.</p>
+                                        <div class="message-symbols">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <p class="first">6:00pm</p>
+                                            <p class="second">2 hour ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-items">
+                                        <h5>Send documents to Mike</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                        <div class="message-symbols">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <p class="first">7:00pm</p>
+                                            <p class="second">3 hour ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-items">
+                                        <h5>Coffee Break</h5>
+                                        <p>Go to shop and find some products. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                                        <div class="message-symbols">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <p class="first">8:00pm</p>
+                                            <p class="second">4 hour ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-items">
+                                        <h5>Phone with Jeronimo</h5>
+                                        <p>Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                        <div class="message-symbols">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <p class="first">9:00pm</p>
+                                            <p class="second">5 hour ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="message-items">
+                                        <h5>Chat with Monica and Sandra</h5>
+                                        <p>Web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                        <div class="message-symbols">
+                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                                            <p class="first">10:00pm</p>
+                                            <p class="second">6 hour ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+          
+          
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "20%";
+            document.getElementById("maincontent").style.width = "80%";
+
+            document.getElementById("fa-bars").style.display = "none";
+
+            document.getElementById("closeBtn").style.display = "block";
+
+            document.getElementById("navicons").style.display = "none";
+            document.getElementById("navicon").style.display = "block";
+
+        }
+        
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "5%";
+            document.getElementById("maincontent").style.width = "95%";
+            
+            document.getElementById("fa-bars").style.display = "inline-block";
+            
+            document.getElementById("closeBtn").style.display = "none";
+            
+            document.getElementById("navicons").style.display = "block";
+            document.getElementById("navicon").style.display = "none";
+        }
+
+        // Spline Chart
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            // title:{
+            //     text: "Speed And Distance Time Graph"
+            // },
+            toolTip: {
+                shared: true
+            },
+            axisX: {
+                title: "Time",
+                suffix : " s"
+            },
+            axisY: {
+                title: "Speed",
+                titleFontColor: "#4F81BC",
+                suffix : " m/s",
+                lineColor: "#4F81BC",
+                tickColor: "#4F81BC"
+            },
+            axisY2: {
+                title: "Distance",
+                titleFontColor: "#C0504E",
+                suffix : " m",
+                lineColor: "#C0504E",
+                tickColor: "#C0504E"
+            },
+            data: [{
+                type: "spline",
+                name: "speed",
+                xValueFormatString: "#### sec",
+                yValueFormatString: "#,##0.00 m/s",
+                dataPoints: [
+                    { x: 0 , y: 0 },
+                    { x: 11 , y: 8.2 },
+                    { x: 47 , y: 41.7 },
+                    { x: 56 , y: 16.7 },
+                    { x: 120 , y: 31.3 },
+                    { x: 131 , y: 18.2 },
+                    { x: 171 , y: 31.3 },
+                    { x: 189 , y: 61.1 },
+                    { x: 221 , y: 40.6 },
+                    { x: 232 , y: 18.2 },
+                    { x: 249 , y: 35.3 },
+                    { x: 253 , y: 12.5 },
+                    { x: 264 , y: 16.4 },
+                    { x: 280 , y: 37.5 },
+                    { x: 303 , y: 24.3 },
+                    { x: 346 , y: 23.3 },
+                    { x: 376 , y: 11.3 },
+                    { x: 388 , y: 8.3 },
+                    { x: 430 , y: 1.9 },
+                    { x: 451 , y: 4.8 }
+                ]
+            },
+            {
+                type: "spline",  
+                axisYType: "secondary",
+                name: "distance covered",
+                yValueFormatString: "#,##0.# m",
+                dataPoints: [
+                    { x: 0 , y: 0 },
+                    { x: 11 , y: 90 },
+                    { x: 47 , y: 1590 },
+                    { x: 56 , y: 1740 },
+                    { x: 120 , y: 3740 },
+                    { x: 131 , y: 3940 },
+                    { x: 171 , y: 5190 },
+                    { x: 189 , y: 6290 },
+                    { x: 221 , y: 7590 },
+                    { x: 232 , y: 7790 },
+                    { x: 249 , y: 8390 },
+                    { x: 253 , y: 8440 },
+                    { x: 264 , y: 8620 },
+                    { x: 280 , y: 9220 },
+                    { x: 303 , y: 9780 },
+                    { x: 346 , y: 10780 },
+                    { x: 376 , y: 11120 },
+                    { x: 388 , y: 11220 },
+                    { x: 430 , y: 11300 },
+                    { x: 451 , y: 11400 }
+                ]
+            }]
+            });
+            chart.render();
+        }
+
+
+        // Doughnut Chart
+        var chart = new CanvasJS.Chart("doughnutContainer", {
+            animationEnabled: true,
+            // title:{
+            //     text: "Email Categories",
+            //     horizontalAlign: "left"
+            // },
+            data: [{
+                type: "doughnut",
+                startAngle: 60,
+                //innerRadius: 60,
+                indexLabelFontSize: 17,
+                indexLabel: "{label} - #percent%",
+                toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+                dataPoints: [
+                    { y: 67, label: "Inbox" },
+                    { y: 28, label: "Archives" },
+                    { y: 10, label: "Labels" },
+                    { y: 7, label: "Drafts"},
+                    { y: 15, label: "Trash"},
+                    { y: 6, label: "Spam"}
+                ]
+            }]
+        });
+        chart.render();
+
+
+
+
+        </script>
+</body>
+</html>

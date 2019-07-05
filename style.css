@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container-home {
+    position: relative;
+}
+
+.side-nav {
+    height: 100%;
+    width: 5%;
+    /* position: absolute; */
+    display: inline-block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: rgb(53, 78, 99);
+}
+
+@media (max-width: 990px) {
+    .side-nav {
+        height: 100%;
+        width: 20%;
+        /* position: absolute; */
+        display: inline-block;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        background-color: rgb(53, 78, 99);
+    }
+
+    .main-content {
+        position: absolute;
+        right: 0;
+        width: 80%;
+        display: inline-block;
+        transition: 0.5s;
+    }
+}
+
+.side-nav .closeBtn {
+    position: absolute;
+    top: -40px;
+    right: 25px;
+    font-size: 26px;
+    margin-left: 50px;
+    color: white;
+    display: none;
+}
+
+
+.side-nav .nav-icons p a .fa{
+    position: relative;
+    left: 45%;
+    top: 80%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    margin: 20px 0;
+    color: #bcc6d1;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 10;
+}
+.side-nav .nav-icons a .fa:hover {
+    color: white;
+}
+.side-nav .nav-icons p:hover {
+    background-color: #293845;
+}
+.side-nav .nav-icons p:hover .fa {
+    color: white;
+}
+
+.side-nav .nav-icons-list p {
+    text-align: center;
+}
+.side-nav .nav-icons-list p a .fa {
+    position: relative;
+    margin: 20px 0;
+    color: #bcc6d1;
+    font-size: 18px;
+    font-weight: normal;
+    z-index: 10;
+}
+.side-nav .nav-icons-list p a {
+    color: #bcc6d1;
+    text-decoration: none;
+}
+.side-nav .nav-icons-list a .fa:hover {
+    color: white;
+}
+.side-nav .nav-icons-list p:hover {
+    background-color: #293845;
+}
+.side-nav .nav-icons-list p:hover .fa, .side-nav .nav-icons-list p:hover a {
+    color: white;
+}
+
+
+.main-content {
+    position: absolute;
+    right: 0;
+    width: 95%;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.navigation-bar .well {
+    border-radius: 0;
+    padding: 10px;
+    height: 60px;
+}
+
+.navigation-bar .well input {
+    position: absolute;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 4px;
+    width: 20%;
+    height: 30px;
+    margin: 5px 15px 0 15px;
+    background-color: rgb(240, 239, 239);
+}
+
+.navigation-bar .well .notifications {
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.navigation-bar .well .notifications .name, .well .notifications .icons {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+    font-size: 18px;
+}
+
+.panel-default .container-left h3, .panel-default .container-right h3 {
+    margin: 15px;
+    color: grey;
+}
+.panel-default .container-left p, .panel-default .container-right p {
+    margin: 15px; 
+    font-size: 10px;
+}
+
+.panel-default .container-left ol li {
+    border: 0;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    width: 90%;
+    line-height: 34px;
+    color: grey;
+}
+
+.panel-default #chartContainer {
+    margin-top: 20px;
+}
+
+.panel-default .chartData {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.panel-default .chartData p {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+    text-align: center;
+}
+.panel-default .chartData p span {
+    font-weight: normal;
+    font-size: 10px;
+    display: block;
+    margin-top: 5px;
+}
+
+#myChart {
+    width: 40%;
+    height: 200px;
+}
+
+.panel-default {
+ border-radius: 0;
+}
+
+/* Left, Right, Center */
+.panel-default .header p {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    display: inline-block;
+}
+.panel-default .header .actions {
+    color: rgb(182, 182, 182);
+    float: right;
+    padding: 10px; 
+}
+.panel-default .header .actions .fa {
+    cursor: pointer;
+    margin: 0 6px 0 6px;
+}
+
+/* Left, right  */
+.panel-default .content {
+    padding: 10px;
+}
+.panel-default .content p {
+    margin: 0;
+}
+
+/* Center */
+.panel-default .header .btn-msg {
+    background-color: #EFAB57;
+    color: white;
+    float: right;
+    margin: 8px 8px 0 0;
+    height: 25px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.panel-default .content ul {
+    padding: 0;
+    list-style-type: none;
+}
+.panel-default .content ul li {
+    border-bottom: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    padding: 13px 0;
+}
+.panel-default .content ul li img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+   
+.panel-default .content .button {
+    display: flex;
+    justify-content: center;
+}
+.panel-default .content .button .btn-like, .btn-dislike {
+    border: 1px solid rgb(207, 207, 207);
+    background-color: white;
+    color: grey;
+    font-size: 11px;
+    padding: 5px 10px;
+    margin: 6px 10px 0 10px;
+}
+.panel-default .content .btn-like:hover, .panel-default .content .btn-dislike:hover {
+    border: 1px solid black;
+    color: black;
+}
+
+.panel-default .content .btn-showMore {
+    width: 100%;
+    color: white;
+    background-color: #57B495;
+}
+
+#content-projects .well {
+    margin: -10px -10px 0 -10px;
+    border-radius: 0;
+    background-color: #F3F6FB;
+}
+
+.panel-default .message-list {
+    margin-left: 30%;
+    margin-top: 15px;
+}
+.panel-default .message-list .message-items {
+    position: relative;
+    border-left: 1px solid rgb(218, 218, 218);
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 15px;
+}
+
+.panel-default .message-list .message-items h5 {
+font-weight: bold;
+}
+
+.panel-default .message-list .message-symbols {
+    position: absolute;
+    top: 0;
+    left: -74px;
+}
+
+.message-list .message-symbols .fa {
+    float: right;
+    padding: 8px;
+    background-color: rgb(219, 219, 219);
+}
+.message-list .message-symbols p.first {
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+    margin: 0 10px;
+}
+.message-list .message-symbols p.second {
+    font-size: 9px;
+    margin: 0 15px;
+    color: #57b495;
+}
